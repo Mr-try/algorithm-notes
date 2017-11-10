@@ -2,3 +2,4 @@
 - [广度优先搜索](./algorithm/BSF.md)
 - [狄克斯特拉算法](./algorithm/dijkstra.md)
 - [K最邻近算法](./algorithm/KNN.md)
+- [冒泡排序](./algorithm/bubbleSort.md)
