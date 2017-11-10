@@ -31,19 +31,24 @@ function bubbleSort(array){
 
 > 双向冒泡排序又称鸡尾酒排序，冒泡排序是从低到高(或者从高到低)单向排序, 双向冒泡排序顾名思义就是从两个方向分别排序(通常, 先从低到高, 然后从高到低). 因此它比冒泡排序性能稍好一些.
 ```
-function bothwayBubbleSort(array){
-    var tail = array.length-1,i,isSwap = false
-    for(i = 0;i<tail;tail--){
-        // 先将最小的数据冒泡到前面
-        for(var j = tail;j>i;j--){
-            array[j-1]>array[j]&&(isSwap = true)&&swap(j,j-1,array)
-        }
-        i++
-        // 将最大的数据冒泡到后面
-        for(j = i;j<tail;j++){
-            array[j]>array[j+1]&&(isSwap = true)&&swap(j,j+1,array)
-        }
-    }
-    return array
-}
+Array.prototype.cocktail_sort = function() {
+	var i, left = 0, right = this.length - 1;
+	var temp;
+	while (left < right) {
+		for (i = left; i < right; i++)
+			if (this[i] > this[i + 1]) {
+				temp = this[i];
+				this[i] = this[i + 1];
+				this[i + 1] = temp;
+			}
+		right--;
+		for (i = right; i > left; i--)
+			if (this[i - 1] > this[i]) {
+				temp = this[i];
+				this[i] = this[i - 1];
+				this[i - 1] = temp;
+			}
+		left++;
+	}
+};
 ```
