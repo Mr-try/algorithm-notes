@@ -4,3 +4,4 @@
 - [K最邻近算法](./algorithm/KNN.md)
 - [冒泡排序](./algorithm/bubbleSort.md)
 - [选择排序](./algorithm/selectSort.md)
+- [插入排序](./algorithm/insertSort.md)
