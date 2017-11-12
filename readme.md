@@ -5,3 +5,4 @@
 - [冒泡排序](./algorithm/bubbleSort.md)
 - [选择排序](./algorithm/selectSort.md)
 - [插入排序](./algorithm/insertSort.md)
+- [快速排序](./algorithm/quickSort.md)
