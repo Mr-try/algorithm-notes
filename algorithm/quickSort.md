@@ -26,3 +26,7 @@ Array.prototype.quick_sort = function(){
    return left.quick_sort().concat(mid.concat(right.quck_sort()))
 }
 ```
+- 平均时间复杂度O(n*logn) 
+- 最好情况O(n*logn) 
+- 最坏情况(n^2) 
+- 空间复杂度O(nlogn)
